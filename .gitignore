@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+# Ignore video assets
+assets/Video/
+
 # Expo
 .expo/
 dist/
