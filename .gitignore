@@ -44,3 +44,6 @@ app-example
 # generated native folders
 /ios
 /android
+
+const SUPABASE_URL = "your_supabase_url";
+const SUPABASE_ANON_KEY = "your_supabase_anon_key";
