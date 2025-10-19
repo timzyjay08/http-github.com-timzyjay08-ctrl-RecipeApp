@@ -98,19 +98,7 @@ export default function HomeScreen() {
   }, []);
 
   // Handle search + category filter with debounce
-  useEffect(() => {
-    if (searchTimeout.current) clearTimeout(searchTimeout.current);
-
-    searchTimeout.current = setTimeout(() => {
-      const filtered = recipes.filter(
-        (item) =>
-          item.title?.toLowerCase().includes(search.toLowerCase()) &&
-          (selectedCategory === "All" ||
-            item.category?.toLowerCase() === selectedCategory.toLowerCase())
-      );
-      setFilteredRecipes(filtered);
-    }, 300);
-  }, [search, selectedCategory, recipes]);
+ 
 
   const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor, padding: 16 },
